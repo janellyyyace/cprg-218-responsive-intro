@@ -40,6 +40,13 @@ main {
     grid-area: main;
 }
 
+#desktop {
+    background-color: maroon;
+    color: gold;
+    padding: 1.4rem;
+    text-align: center;
+}
+
 footer {
     grid-area: footer;
     background-color: maroon;
@@ -47,6 +54,7 @@ footer {
     text-align: center;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width:600px){
     #container{
         grid-template-areas:
@@ -56,9 +64,14 @@ footer {
         "footer"
         ;
     }
+    /* same as display:block; */
+    /* turns into 1 column layout on mobile */
+
+    #desktop{
+        display: none;
+    }
 }
-/* same as display:block; */
-/* turns into 1 column layout on mobile */
+
 
 /* NAV LINKS */
 
