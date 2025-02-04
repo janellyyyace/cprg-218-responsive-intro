@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: maroon;
+    color: gold;
+}
+
+@media screen and (max-width:500px){
+    /*Any screen resolution from 401x-500px wide*/
+    
+    body {
+        background-color: darkgreen;
+        color: silver;
+    }
+}
+
+@media screen and (max-width:400px){
+    /*Any screen resolution from 0px-400px wide*/
+    
+    body {
+        background-color: darkblue;
+        color: white;
+    }
+}
