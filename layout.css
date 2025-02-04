@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    /*hashtag means "id"*/
+
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        /*two headers bc we want both columns to be headers*/
+
+        "nav main" 
+        /*want nav to go on left and main on the right*/
+
+        "footer footer"
+        ;
+    
+        grid-template-columns: 1fr 3fr;
+        /*fr means fraction of the grid*/
+
+        grid-template-rows: auto 1fr auto;
+        /*decides height of all rows*/
+        /* auto means take as much space as content needs, auto on each side means take whatever space is left and split it in half*/
+}
+
+header{
+    grid-area: header;
+    background-color: maroon;
+    color: gold;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: gold;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: maroon;
+    color: gold;
+    text-align: center;
+}
+
+@media screen and (max-width:600px){
+    #container{
+        grid-template-areas:
+        "header"
+        "main"
+        "nav"
+        "footer"
+        ;
+    }
+}
+/* same as display:block; */
+/* turns into 1 column layout on mobile */
+
+/* NAV LINKS */
+
+a:link {
+    color: maroon;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: gold;
+    background-color: transparent;
+    text-decoration: underline;
+  }
