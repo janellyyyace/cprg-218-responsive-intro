@@ -70,6 +70,7 @@ footer {
     #desktop{
         display: none;
     }
+    /* display block of text only on < 600px */
 }
 
 
